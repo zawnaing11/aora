@@ -38,8 +38,8 @@ const VideoCard = ({ video: {title, thumbnail, video, users: { username, avatar 
         {
             play ?
             (<Video
-                source={require('@/assets/videos/video001.mp4')}
-                className="w-52 h-72 rounded-[33px] mt-3 bg-white/10"
+                source={{ uri: video }}
+                style={{ width: 400, height: 240}}
                 resizeMode={ResizeMode.CONTAIN}
                 useNativeControls={true}
                 shouldPlay
